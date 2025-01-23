@@ -32,12 +32,10 @@
         </div>
 
         <!-- Música de fondo -->
-        <audio id="background-music" loop>
-            <source src="sparks.mp3" type="audio/mp3">
+        <audio id="background-music" loop controls>
+            <source src="song1.mp3" type="audio/mp3">
             Tu navegador no soporta audio.
         </audio>
-        <button id="music-toggle">🎵</button>
-    </div>
 
     <!-- Modal para mostrar imagen o video -->
     <div id="modal">
@@ -47,8 +45,13 @@
     </div>
 
     <div id="countdown">
-        <h2>Faltan <span id="timer"></span> días para nuestro aniversario</h2>
-        <div id="timer"></div>
+        <h2>Tiempo restante para nuestro monkeyaniversario:</h2>
+        <div id="timer">
+            <span id="days">00</span> días 
+            <span id="hours">00</span> horas 
+            <span id="minutes">00</span> minutos 
+            <span id="seconds">00</span> segundos
+        </div>
     </div>
     
 
