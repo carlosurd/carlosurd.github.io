@@ -20,26 +20,34 @@ document.addEventListener('DOMContentLoaded', function() {
     const modal = document.getElementById('modal');
     const modalContent = document.getElementById('modal-content');
     const modalClose = document.getElementById('modal-close');
-    const countdownDate = new Date("2025-03-22").getTime(); // Cambia la fecha a tu evento
-
-
-
-    //cuenta regresiva
-    const x = setInterval(function() {
-        const now = new Date().getTime();
-        const distance = countdownDate - now;
+    const countdownDate = new Date("2025-03-22T00:01:45").getTime(); 
     
+
+
+
+   // Actualización en tiempo real
+const x = setInterval(function () {
+    const now = new Date().getTime();
+    const distance = countdownDate - now;
+
+    if (distance > 0) {
+        // Cálculo de días, horas, minutos y segundos
         const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    
-        // Muestra los días restantes
-        document.getElementById("timer").innerHTML = days + " días restantes";
-    
-        // Si la cuenta regresiva ha terminado
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("timer").innerHTML = "¡Es hoy!";
-        }
-    }, 1000);
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Mostrar en el HTML
+        document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+        document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+        document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+        document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+    } else {
+        // Si ya pasó la fecha
+        clearInterval(x);
+        document.getElementById("timer").innerHTML = "¡Es hoy! ❤️";
+    }
+}, 1000);
 
     // Mostrar imágenes o videos del mes seleccionado
 document.querySelectorAll('.months button').forEach(button => {
@@ -89,8 +97,8 @@ function openModal(src) {
     // Ajustar el tamaño del contenido en el modal
     const modalMedia = modalContent.querySelector('.modal-media');
     if (modalMedia) {
-        modalMedia.style.maxWidth = '55%';
-        modalMedia.style.maxHeight = '55%';
+        modalMedia.style.maxWidth = '50%';
+        modalMedia.style.maxHeight = '50%';
         modalMedia.style.objectFit = 'contain';  // Esto asegurará que la imagen o video se ajusten al tamaño sin distorsión
     }
 }
