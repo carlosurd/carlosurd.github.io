@@ -130,6 +130,7 @@ p {
 #countdown {
     text-align: center;
     margin-top: 50px;
+    font-family: Arial, sans-serif;
 }
 
 #countdown h2 {
@@ -139,11 +140,18 @@ p {
 }
 
 #timer {
-    font-size: 2.5em;
+    font-size: 2em;
     font-weight: bold;
     color: #ff4081;
-    background-color: #000;
+    background-color: #E5A9A9;
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
+    line-height: 1.5;
 }
+
+#timer span {
+    color: #AF4D98; /* Verde para destacar */
+    margin: 0 5px;
+}
+
