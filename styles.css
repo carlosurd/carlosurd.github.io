@@ -1,0 +1,296 @@
+/* Portal de Monkeynovios */
+.home-container {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.home-header {
+    margin-bottom: 40px;
+}
+
+.logo {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.home-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.since,
+.slogan {
+    font-size: 1.2em;
+    color: var(--accent-color);
+}
+
+.home-links {
+    margin-top: 30px;
+}
+
+.home-links h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.home-link {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    color: white;
+    background-color: #ce93d8;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.home-link:hover {
+    background-color: #ba68c8;
+    transform: scale(1.1);
+}
+
+
+
+
+:root {
+    --main-color: #6369D1;
+    --secondary-color: #D8D2E1;
+    --accent-color: #60E1E0;
+    --font-family: 'Arial', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.months button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #ce93d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.months button:hover {
+    transform: scale(1.1);
+    background-color: #ba68c8;
+}
+
+/* Galería */
+.album {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.album img,
+.album video {
+    max-width: 200px;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 2px solid #7b1fa2;
+}
+
+.album img:hover,
+.album video:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Modal */
+.modal {
+    display: flex; /* Usar flex para centrar la imagen */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Fondo semitransparente */
+  z-index: 1000;
+  overflow: hidden; /* Evita desplazamientos extra */
+}
+
+#modal-content {
+    display: block;
+  max-width: 90%; /* La imagen no será más ancha que la ventana */
+  max-height: 90%; /* La imagen no será más alta que la ventana */
+  margin: auto; /* Centrar la imagen */
+  object-fit: contain; /* Ajusta la imagen para que se mantenga dentro del contenedor sin distorsión */
+}
+
+.modal-media {
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#modal-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+#music-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #4a148c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+
+.song-button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #8e24aa;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.song-button:hover {
+    transform: scale(1.1);
+    background-color: #5e35b1;
+}
+
+.song-button:active {
+    transform: scale(1.05);
+    background-color: #311b92;
+}
+
+#countdown {
+    text-align: center;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+#countdown h2 {
+    font-size: 2em;
+    color: #e91e63;
+    margin-bottom: 30px;
+}
+
+#timer {
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff4081;
+    background-color: #E5A9A9;
+    padding: 30px;
+    border-radius: 20px;
+    display: inline-block;
+    line-height: 1.5;
+}
+
+#timer span {
+    color: #AF4D98; 
+    margin: 0 5px;
+}
+
+/* Login */
+#login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--main-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#login-form input {
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+    font-size: 1em;
+    border: 2px solid #ce93d8;
+    border-radius: 5px;
+}
+
+#login-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #CB48B7;
+    background-color: #ce93d8;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form button:hover {
+    background-color: #ba68c8;
+}
+
+
+/* Mensajes de login */
+#login-container p {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Monkeynovios</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="login.js" defer></script>
+</head>
+<body>
+    <div id="login-container">
+        <h1>Bienvenidos a Monkeynovios</h1>
+        <p>Por favor monkeynovia, inicia sesión para continuar</p>
+        <form id="login-form">
+            <input type="text" id="username" placeholder="ID MONKEYNOVIA" required>
+            <input type="password" id="password" placeholder="CONTRASEÑA MONKEYNOVIA" required>
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p id="login-error" style="color: red; display: none;">Credenciales incorrectas, inténtalo de nuevo.</p>
+    </div>
+
+    <div id="home-container" style="display: none;">
+        <header class="home-header">
+            <img src="images/logo.png" alt="Logo de Monkeynovios" class="logo">
+            <h1>Portal de Monkeynovios</h1>
+            <p class="since">Since 22-03-2024</p>
+            <p class="slogan">"Monkeynovios unidos, jamás serán vencidos"</p>
+        </header>
+
+        <div class="home-links">
+            <h2>Explora:</h2>
+            <a href="album.html" class="home-link">📸 Álbum de Monkeynovios</a>
+            <a href="#" class="home-link">📝 Próximamente</a>
+            <a href="#" class="home-link">🌟 Próximamente</a>
+            <a href="#" class="home-link">💬 Próximamente</a>
+        </div>
+    </div>
+</body>
+</html>
