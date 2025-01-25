@@ -10,16 +10,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Imágenes por mes
     const albums = {
-        1: ['enero1.jpg', 'enero2.jpg', 'enero3.jpg'],
+                1: ['enero1.jpg', 'enero2.jpg', 'enero3.jpg'],
         2: ['febrero1.jpg', 'febrero2.jpg', 'febrero3.jpg'],
         3: ['marzo1.jpg', 'marzo2.jpg', 'marzo3.jpg'],
         4: ['abril1.jpg', 'abril2.jpg', 'abril3.jpg'],
         5: ['mayo1.jpg', 'mayo2.jpg', 'mayo3.jpg'],
-        6: ['junio1.jpg', 'junio2.jpg', 'junio3.jpg'],
+        6: ['junio1.mp4', 'junio2.mp4', 'junio3.jpg'],
         7: ['julio1.jpg', 'julio2.jpg', 'julio3.jpg'],
-        8: ['agosto1.jpg', 'agosto2.jpg', 'agosto3.jpg'],
+        8: ['agosto1.jpg', 'agosto2.mp4', 'agosto3.jpg'],
         9: ['septiembre.jpg','septiembre1.jpg',  'septiembre2.jpg', 'septiembre3.jpg'],
-        10: ['octubre1.jpg', 'octubre2.jpg', 'octubre3.jpg'],
+        10: ['octubre1.jpg', 'octubre2.mp4', 'octubre3.mp4'],
         11: ['noviembre1.jpg', 'noviembre2.jpg', 'noviembre3.jpg'],
         12: ['diciembre.jpg', 'diciembre1.jpg' , 'diciembre2.jpg', 'dicvideo1.mp4']
     };
