@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         3: ['marzo1.jpg', 'marzo2.jpg', 'marzo3.jpg'],
         4: ['abril1.jpg', 'abril2.jpg', 'abril3.jpg'],
         5: ['mayo1.jpg', 'mayo2.jpg', 'mayo3.jpg'],
-        6: ['junio1.mp4', 'junio2.mp4', 'junio3.jpg'],
+        6: ['junio1.jpg', 'junio2.mp4', 'junio3.jpg'],
         7: ['julio1.jpg', 'julio2.jpg', 'julio3.jpg'],
         8: ['agosto.jpg', 'agosto2.mp4', 'agosto3.jpg'],
         9: ['septiembre.jpg','septiembre1.jpg',  'septiembre2.jpg', 'septiembre3.jpg'],
